@@ -21,7 +21,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="header-down , ti-angle-down">
 
@@ -276,10 +276,26 @@
     <script>
         var header = document.getElementById('header');
         var mobileMenu = document.getElementById('mobile-menu');
-       
+        var headerHieght = header.clientHeight;    
+        // đóng mở mobile trong menu   
         mobileMenu.onclick = function() {
-            alert('thong bao')
+            var isclose = header.clientHeight === headerHieght;
+            if (isclose) {
+                header.style.height = 'auto';
+
+            } else{
+                header.style.height = null;
+            }
         }
+        // tự dộng đóng khi chọn
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0 ; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                header.style.height = null;
+            }
+        }   
+
         
     </script>
     
