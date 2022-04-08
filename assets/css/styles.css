@@ -171,6 +171,12 @@ html{
     /* khoản cách các chữ chiều dọc = 24px */
 }
 /* button search */
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 #header .mobile-menu-btn,
 #header .search-btn{
     float: right;
