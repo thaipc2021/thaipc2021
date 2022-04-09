@@ -291,6 +291,9 @@
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for (var i = 0 ; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
+            var isParentMenu
+            
+
             menuItem.onclick = function(){
                 header.style.height = null;
             }
