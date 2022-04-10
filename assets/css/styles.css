@@ -96,7 +96,7 @@ html{
     right: 0;
     z-index: 1;
     /* Làm cho position nổi lên cao bằng Z-index */
-    overflow: hidden;
+  
     
 }
 
