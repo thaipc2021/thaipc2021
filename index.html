@@ -72,17 +72,17 @@
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="row member-list">
-                    <div class="col col-third text-align"> 
+                    <div class="col col-third s-col-full mt-16 text-align"> 
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
                     </div>
 
-                    <div class="col col-third text-align">
+                    <div class="col col-third s-col-full mt-16 text-align">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
                     </div>
 
-                    <div class="col col-third text-align">
+                    <div class="col col-third s-col-full mt-16 text-align">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
                     </div>
@@ -104,7 +104,7 @@
                     </ul>
                     <!-- place -->
                     <div class="row place-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/place2.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -124,7 +124,7 @@
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/place3.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -295,11 +295,11 @@
             
             menuItem.onclick = function(event) {
                 var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('navsub');
-                if (!isParentMenu) {
-                    header.style.height = null;
-
-                } else {
+                if (isParentMenu) {
                     event.preventDefault();
+                    
+                } else {
+                    header.style.height = null;
                 }
                    
             }
