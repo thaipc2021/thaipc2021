@@ -542,6 +542,15 @@ html{
     display: inline-block;
 
 }
+.contact-info a {
+    color: #100bee;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    color: #100bee;
+    opacity: 1;
+}
 
 .contact-form {
     font-size: 15px;
